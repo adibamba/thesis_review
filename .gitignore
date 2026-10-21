@@ -1,0 +1,19 @@
+# environments and caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+# secrets - never commit
+*.pem
+*.key
+.env
+# large or regenerable data
+data/
+logs/*.npz
+logs/*.png
+logs/yolo_surveillance_metrics*.json
+*.pt
+*.onnx
+coco128/
+# keep small result files if you want them in the repo, e.g. logs/learning_evidence.json

@@ -1,0 +1,25 @@
+# YOLO controller configuration for Edge AI Thesis
+# Controller weights are unused - reserved for the J objective.
+
+# Thresholds and hysteresis for mode switching
+tau_upper: 0.78
+tau_lower: 0.35
+safety_hysteresis: 0.05
+
+# Cloud configuration for Azure offloading
+azure_cloud:
+  enabled: true
+  endpoint_url: "${CLOUD_URL}/api/v1/cloud_bp_step" # default path; set CLOUD_URL in the environment
+  timeout_seconds: 2.5
+
+# Energy model used by the logger and dashboard.
+energy:
+  p_edge_pc_w: 0.0215 # source: simulation calibration; PLACEHOLDER - measure on target hardware (Raspberry Pi 5)
+  p_edge_ext_w: 0.02 # source: simulation calibration; PLACEHOLDER - measure on target hardware (Raspberry Pi 5)
+  p_tx_j_per_kb: 0.001 # source: simulation calibration; PLACEHOLDER - measure on target hardware (Raspberry Pi 5)
+  p_wait_j_per_ms: 0.0 # source: not measured; TODO: measure target wait power
+  cloud_overhead_factor_j: 0.293 # source: simulation calibration; PLACEHOLDER - measure on target hardware (Raspberry Pi 5)
+
+circuit_breaker:
+  max_failures: 3
+  cooldown_frames: 20

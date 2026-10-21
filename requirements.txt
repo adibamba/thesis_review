@@ -1,0 +1,8 @@
+# client / analysis side (laptop and Raspberry Pi)
+numpy
+matplotlib
+pyyaml
+requests
+opencv-python-headless
+ultralytics      # YOLOv8; AGPL-3.0 licence, see README
+streamlit        # dashboard only

@@ -1,0 +1,5 @@
+# cloud BP server (Azure VM or your PC)
+fastapi
+uvicorn
+torch
+numpy

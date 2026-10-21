@@ -1,0 +1,64 @@
+{
+  "pc_alone": {
+    "weights": 16384,
+    "epochs": 60,
+    "F_nothing_predicted_train": 128.0,
+    "F_nothing_predicted_heldout": 472.33,
+    "F_train_start": 99.63,
+    "F_train_end": 7.27,
+    "F_heldout_start": 371.21,
+    "F_heldout_end": 299.54,
+    "weight_change_rel": 0.657,
+    "heldout_error_removed_pct": 19.3
+  },
+  "pc_vs_bp": {
+    "train_photos": 63,
+    "test_photos": 65,
+    "epochs": 150,
+    "lr": 0.02,
+    "BP": {
+      "train_loss_start": 16.121,
+      "train_loss_end": 0.0031,
+      "test_loss_end": 1.92,
+      "test_top1": 0.323
+    },
+    "PC": {
+      "train_loss_start": 16.121,
+      "train_loss_end": 0.007,
+      "test_loss_end": 3.007,
+      "test_top1": 0.308
+    },
+    "BP_best_test_loss": [
+      1.8,
+      16
+    ],
+    "PC_best_test_loss": [
+      3.005,
+      144
+    ],
+    "baseline_always_most_common_class_top1": 0.354,
+    "baseline_class_frequency_test_loss": 0.438,
+    "cosine_PC_update_vs_BP_gradient": {
+      "first_epoch": 0.871,
+      "last_epoch": 0.993,
+      "mean": 0.989
+    }
+  },
+  "azure_model": {
+    "steps": 400,
+    "lr_assumed": 0.001,
+    "chance_loss_ln80": 4.382,
+    "simulated_random_features_label0": {
+      "loss_first10": 4.641,
+      "loss_last10": 3.8752,
+      "loss_after_56_steps": 4.361
+    },
+    "real_features_yolo_labels": {
+      "loss_first10": 4.437,
+      "loss_last10": 1.9068
+    },
+    "real_heldout_loss_before": 4.508,
+    "real_heldout_loss_after": 3.845,
+    "real_heldout_loss_class_frequency_guess": 3.571
+  }
+}

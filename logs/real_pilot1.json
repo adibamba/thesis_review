@@ -1,0 +1,166 @@
+{
+  "meta": {
+    "generated_at": "2026-10-12T07:56:54.270716+00:00",
+    "data_source": "real_images_coco128_yolov8n",
+    "extractor": "yolov8n",
+    "weights": "yolov8n.pt",
+    "dataset": "coco128 (128 images from COCO train2017; YOLOv8n was trained on COCO train2017)",
+    "split": {
+      "fit": 39,
+      "calibrate": 24,
+      "test": 65
+    },
+    "pc_layer": {
+      "inputs": 256,
+      "latent": 64,
+      "weights": 16384,
+      "K": 5
+    },
+    "calm_stats": {
+      "mean": 342.5287340989298,
+      "sd": 530.4465061350539
+    },
+    "thresholds": {
+      "tau_upper": 1933.8682525040917,
+      "tau_lower": 872.9752402339838,
+      "k_up": 3.0,
+      "k_low": 1.0,
+      "hysteresis": 0.0
+    },
+    "stream": {
+      "frames": 120,
+      "damaged_from": 30,
+      "damaged_to": 75,
+      "damage": "fog",
+      "severity": 3
+    },
+    "pilot1": {
+      "table": [
+        {
+          "damage": "noise",
+          "severity": 1,
+          "auroc": 0.428,
+          "auroc_two_sided": 0.502,
+          "F_clean_mean": 283.639,
+          "F_damaged_mean": 186.742,
+          "alarm_rate_damaged": 0.0
+        },
+        {
+          "damage": "noise",
+          "severity": 3,
+          "auroc": 0.377,
+          "auroc_two_sided": 0.504,
+          "F_clean_mean": 283.639,
+          "F_damaged_mean": 110.912,
+          "alarm_rate_damaged": 0.0
+        },
+        {
+          "damage": "noise",
+          "severity": 5,
+          "auroc": 0.564,
+          "auroc_two_sided": 0.274,
+          "F_clean_mean": 283.639,
+          "F_damaged_mean": 147.157,
+          "alarm_rate_damaged": 0.0
+        },
+        {
+          "damage": "blur",
+          "severity": 1,
+          "auroc": 0.448,
+          "auroc_two_sided": 0.533,
+          "F_clean_mean": 283.639,
+          "F_damaged_mean": 232.143,
+          "alarm_rate_damaged": 0.0
+        },
+        {
+          "damage": "blur",
+          "severity": 3,
+          "auroc": 0.387,
+          "auroc_two_sided": 0.469,
+          "F_clean_mean": 283.639,
+          "F_damaged_mean": 99.742,
+          "alarm_rate_damaged": 0.0
+        },
+        {
+          "damage": "blur",
+          "severity": 5,
+          "auroc": 0.393,
+          "auroc_two_sided": 0.465,
+          "F_clean_mean": 283.639,
+          "F_damaged_mean": 96.471,
+          "alarm_rate_damaged": 0.0
+        },
+        {
+          "damage": "dark",
+          "severity": 1,
+          "auroc": 0.507,
+          "auroc_two_sided": 0.482,
+          "F_clean_mean": 283.639,
+          "F_damaged_mean": 278.323,
+          "alarm_rate_damaged": 0.015
+        },
+        {
+          "damage": "dark",
+          "severity": 3,
+          "auroc": 0.5,
+          "auroc_two_sided": 0.461,
+          "F_clean_mean": 283.639,
+          "F_damaged_mean": 252.375,
+          "alarm_rate_damaged": 0.015
+        },
+        {
+          "damage": "dark",
+          "severity": 5,
+          "auroc": 0.467,
+          "auroc_two_sided": 0.433,
+          "F_clean_mean": 283.639,
+          "F_damaged_mean": 195.392,
+          "alarm_rate_damaged": 0.015
+        },
+        {
+          "damage": "fog",
+          "severity": 1,
+          "auroc": 0.501,
+          "auroc_two_sided": 0.493,
+          "F_clean_mean": 283.639,
+          "F_damaged_mean": 275.228,
+          "alarm_rate_damaged": 0.0
+        },
+        {
+          "damage": "fog",
+          "severity": 3,
+          "auroc": 0.5,
+          "auroc_two_sided": 0.478,
+          "F_clean_mean": 283.639,
+          "F_damaged_mean": 253.651,
+          "alarm_rate_damaged": 0.0
+        },
+        {
+          "damage": "fog",
+          "severity": 5,
+          "auroc": 0.485,
+          "auroc_two_sided": 0.458,
+          "F_clean_mean": 283.639,
+          "F_damaged_mean": 216.109,
+          "alarm_rate_damaged": 0.0
+        }
+      ],
+      "mean_auroc": 0.463,
+      "mean_auroc_two_sided": 0.463,
+      "false_alarm_rate_clean": 0.015,
+      "target_auroc": 0.9
+    },
+    "replay": {
+      "cloud_frames": 2,
+      "duty_cycle": 0.017,
+      "alarm_delay_frames": 59,
+      "false_alarm_frames_in_calm": 2
+    },
+    "measured_here_ms": {
+      "extractor_mean": 219.51,
+      "note": "measured on this computer; not used for the energy model"
+    },
+    "seed": 1,
+    "official_corruptions": false
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "generated_at": "2026-10-12T08:09:22.285694+00:00",
+    "data_source": "real_images_coco128_yolov8n_windowed",
+    "signal": "windowed Gaussian free energy, W=15, Ledoit-Wolf, cross-fitted calibration",
+    "split": {
+      "fit": 39,
+      "calibrate": 24,
+      "test": 65
+    },
+    "thresholds": {
+      "tau_upper": 602.9788523882248,
+      "tau_lower": 396.2438021985746,
+      "k_up": 3.0,
+      "k_low": 1.0,
+      "hysteresis": 0.0
+    },
+    "stream": {
+      "frames": 120,
+      "damaged_from": 30,
+      "damaged_to": 75,
+      "damage": "blur",
+      "severity": 3,
+      "warmup_frames": 14
+    },
+    "pilot1": {
+      "table": [
+        {
+          "damage": "noise",
+          "severity": 1,
+          "auroc": 0.799,
+          "alarm_rate_damaged": 0.03
+        },
+        {
+          "damage": "noise",
+          "severity": 3,
+          "auroc": 1.0,
+          "alarm_rate_damaged": 0.983
+        },
+        {
+          "damage": "noise",
+          "severity": 5,
+          "auroc": 1.0,
+          "alarm_rate_damaged": 1.0
+        },
+        {
+          "damage": "blur",
+          "severity": 1,
+          "auroc": 0.649,
+          "alarm_rate_damaged": 0.015
+        },
+        {
+          "damage": "blur",
+          "severity": 3,
+          "auroc": 1.0,
+          "alarm_rate_damaged": 1.0
+        },
+        {
+          "damage": "blur",
+          "severity": 5,
+          "auroc": 1.0,
+          "alarm_rate_damaged": 1.0
+        },
+        {
+          "damage": "dark",
+          "severity": 1,
+          "auroc": 0.539,
+          "alarm_rate_damaged": 0.007
+        },
+        {
+          "damage": "dark",
+          "severity": 3,
+          "auroc": 0.644,
+          "alarm_rate_damaged": 0.0
+        },
+        {
+          "damage": "dark",
+          "severity": 5,
+          "auroc": 0.922,
+          "alarm_rate_damaged": 0.02
+        },
+        {
+          "damage": "fog",
+          "severity": 1,
+          "auroc": 0.546,
+          "alarm_rate_damaged": 0.007
+        },
+        {
+          "damage": "fog",
+          "severity": 3,
+          "auroc": 0.644,
+          "alarm_rate_damaged": 0.007
+        },
+        {
+          "damage": "fog",
+          "severity": 5,
+          "auroc": 0.812,
+          "alarm_rate_damaged": 0.015
+        }
+      ],
+      "mean_auroc": 0.796,
+      "mean_auroc_sev_ge3": 0.878,
+      "false_alarm_rate_clean": 0.005,
+      "target_auroc": 0.9,
+      "target_met": false
+    },
+    "replay": {
+      "cloud_frames": 43,
+      "duty_cycle": 0.358,
+      "alarm_delay_frames": 9,
+      "false_alarm_frames_in_calm": 7
+    },
+    "seed": 1
+  }
+}
